@@ -1,0 +1,9 @@
+name: simulate-genomes
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3
+  - simug=1.0.0
+  - parasail-python=1.2.4
