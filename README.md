@@ -24,8 +24,12 @@ Several parameters are available to control the amount of genomic variation that
 
 | Parameter   | Description                                          | Default |
 |:------------|:-----------------------------------------------------|--------:|
-| `min_snps`  | Minimum number of SNPs that will be introduced.      | 2       |
-| `max_snps`  | Maximum number of SNPs that will be introduced.      | 20      |
+| `min_snps`  | Minimum number of SNPs that will be introduced.      | 0       |
+| `max_snps`  | Maximum number of SNPs that will be introduced.      | 1000    |
+| `min_cnvs`  | Minimum number of CNVs that will be introduced.      | 0       |
+| `max_cnvs`  | Maximum number of CNVs that will be introduced.      | 100     |
+| `min_indels`  | Minimum number of INDELs that will be introduced.    | 0       |
+| `max_indels`  | Maximum number of INDELs that will be introduced.    | 1000    |
 
 ## Output
 For each simulated genome, a four-character semi-random string will be appended to the original input genome name. For example, starting with an input file named `ATCC-BAA-2779.fasta`
@@ -35,6 +39,6 @@ will generate the following outputs.
 ATCC-BAA-2779-DCDE
     ├── ATCC-BAA-2779-DCDE.fa
     ├── ATCC-BAA-2779-DCDE_mutation_info.csv
-    ├── ATCC-BAA-2779-DCDE.variants.tsv
+    ├── ATCC-BAA-2779-DCDE_variants.tsv
     └── ATCC-BAA-2779-DCDE.vcf
 ```
